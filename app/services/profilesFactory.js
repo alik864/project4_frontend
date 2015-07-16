@@ -4,7 +4,7 @@
   var profilesFactory = function($http) {
     var factory = {};
     factory.profiles = [];
-    factory.profiles = {};
+    factory.profile = {};
 
     factory.getProfiles = function() {
       return $http.get('http://localhost:3000/profiles').success(function(response) {
@@ -13,9 +13,9 @@
       });
     };
 
-    factory.getProfiles = function(profilesId) {
-      return $http.get('http://localhost:3000/profiles/' + profilesId).success(function(response) {
-        angular.copy(response, factory.profiles);
+    factory.getProfile = function(profileId) {
+      return $http.get('http://localhost:3000/profiles/' + profileId).success(function(response) {
+        angular.copy(response, factory.profile);
       });
     };
 

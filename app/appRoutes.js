@@ -1,38 +1,38 @@
 
 app.config(['$routeProvider', function($routeProvider, $locationProvider){
   $routeProvider
-  .when('/profile', {
+  .when('/profiles/:profileId', {
     //profile route
-    templateUrl: 'views/profile.html',
+    templateUrl: 'app/views/profile.html',
     controller: ProfilesController,
     controllerAs: 'profileCtrl'
     })
     // user route
     .when('/user', {
-    templateUrl: 'views/user.html',
+    templateUrl: 'app/views/user.html',
     controller: UsersController,
     controllerAs: 'userCtrl'
     })
     //review route
     .when('/review', {
-    templateUrl: 'views/review.html',
+    templateUrl: 'app/views/review.html',
     controller: ReviewsController,
     controllerAs: 'reviewCtrl'
     })
     //Registration route
     .when('/registrations', {
-    templateUrl: 'views/registration.html',
+    templateUrl: 'app/views/registration.html',
     controller: RegistrationsController,
     controllerAs: 'registrationsCtrl'
     })
      //Do Register
     .when('/doregistration', {
-    templateUrl: 'views/doregistration.html',
+    templateUrl: 'app/views/doregistration.html',
     controller: RegistrationsController,
     controllerAs: 'registrationsCtrl'
 
   }).otherwise({
-    redirectTo: '/login'
+    redirectTo: '/profileyes'
   });
 
 }]);
