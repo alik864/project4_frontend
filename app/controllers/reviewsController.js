@@ -1,8 +1,8 @@
-angular.module('reviewApp').controller('ReviewController', ReviewController);
+
 
 // ProfileController.$inject = [''];
 
-function ReviewController(){
+function ReviewsController(){
   vm = this;
   this.reviews = {
     name: 'Ali',
@@ -10,3 +10,5 @@ function ReviewController(){
   }
 
 }
+
+angular.module('profileApp').controller('ReviewsController', ReviewsController);

@@ -1,0 +1,29 @@
+
+
+<html ng-app='profileApp'>
+  <head>
+    <link rel="stylesheet" href="app/css/main.css">
+     <script type='text/javascript' src='../bower_components/angular/angular.js'></script>
+     <script type='text/javascript' src='../bower_components/angular-route/angular-route.js'></script>
+    <script src='app/app.js'></script>
+
+     <!-- FACTORIES -->
+    <script src='app/services/usersFactory.js'></script>
+    <script src='app/services/profilesFactory.js'></script>
+    <script src='app/services/reviewsFactory.js'></script>
+
+     <!-- CONTROLLERS -->
+     <script type='text/javascript' src='app/controllers/profilesController.js'></script>
+     <script type='text/javascript' src='app/controllers/usersController.js'></script>
+     <script type='text/javascript' src='app/controllers/reviewsController.js'></script>
+     <script type='text/javascript' src='app/controllers/registrationsController.js'></script>
+
+    <!-- APP Routes  -->
+      <script src='app/appRoutes.js'></script>
+
+  </head>
+  <body ng-view="">
+
+  </body>
+</html>
+

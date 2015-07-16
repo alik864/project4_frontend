@@ -1,8 +1,8 @@
-angular.module('userApp').controller('UserController', UserController);
+angular.module('profileApp').controller('UsersController', UsersController);
 
 // ProfileController.$inject = [''];
 
-function UserController(){
+function UsersController(){
   vm = this;
   this.user = {
     name: 'Ali',
